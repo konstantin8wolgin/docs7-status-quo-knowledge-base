@@ -1,0 +1,14 @@
+{
+  "name": "docs7-status-quo-validation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "check:status-quo-mermaid": "node scripts/check-status-quo-mermaid.mjs",
+    "test": "node --test src/status-quo-mermaid.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "mermaid": "11.16.0"
+  }
+}

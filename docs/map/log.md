@@ -1,0 +1,118 @@
+# Codebase Map maintenance log
+
+Append-only format:
+
+`- YYYY-MM-DD | <base-sha> | <page-id> | page_update|attestation | <rationale>`
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:account-export-deletion | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:consent-provider-fallback | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:entity-filing-review-merge | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:retry-lease-recovery | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:upload-job-extraction-filing-polling | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:gdpr-account | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:jobs-workers | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:account-export-deletion | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | flow:entity-filing-review-merge | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:gdpr-account | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | cf5801de88cadd3387d54e0f9d9a0e9d0025f99b | subsystem:data-migrations-testing-operations | attestation | CI now installs the client parser dependency before backend tests; architecture, invariants, and proof surface are unchanged.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:auth-vault-context | attestation | Password-reset token locking changed authn internals only; session-cookie identity, membership resolution, role enforcement, and vault-selection claims remain accurate.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:consent-provider-fallback | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:entity-filing-review-merge | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:retry-lease-recovery | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:sample-import | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:upload-job-extraction-filing-polling | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:auth-vault-consent | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:capture-documents | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:client-architecture | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:data-migrations-testing-operations | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:jobs-workers | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:entity-filing-review-merge | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:fact-verification-provenance | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:facts-summaries | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:entity-filing-review-merge | attestation | blocked not_same pairs now converge on the single unconstrained namesake instead of minting duplicates; review-question identity centralized in typed ReviewFindingIdentity; sequence/failure/trust narrative unchanged
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:upload-job-extraction-filing-polling | attestation | filing.py change is internal to the blocked-pair fallback in apply_decisions; upload-extraction-polling narrative untouched
+- 2026-07-17 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:account-export-deletion | attestation | files.py adds discard_storage_object orphan-cleanup helper; export and deletion flow unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:consent-provider-fallback | attestation | Only upload orphan-cleanup and prod SQLite guard added; consent provider fallback unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:encrypted-file-read | attestation | Read path now calls get_vault_kek instead of ensure_vault_kek; decrypt flow otherwise unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:retry-lease-recovery | attestation | jobs.py adds upload-commit orphan cleanup; retry and lease recovery unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:sample-import | attestation | jobs.py adds upload-commit orphan cleanup; sample import path otherwise unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:search-grounded-chat | attestation | Chat answer job body unchanged; only upload orphan-cleanup guard added to jobs.py.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | flow:upload-job-extraction-filing-polling | attestation | Adds orphan-ciphertext cleanup on failed upload transaction; flow otherwise unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | subsystem:files-crypto-storage | attestation | Adds get_vault_kek and discard_storage_object; crypto and storage contract unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | subsystem:gdpr-account | attestation | files.py adds orphan-cleanup helper; GDPR account behavior unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | subsystem:jobs-workers | attestation | jobs.py adds upload orphan-cleanup guard; job and worker contract unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | subsystem:runtime-configuration | attestation | settings.py adds allow_sqlite_in_prod field and prod SQLite guard; config contract unchanged.
+- 2026-07-17 | ac83486e4e508b683e3067b8a402865080ed585e | subsystem:search-grounded-chat | attestation | Chat job body unchanged; only upload orphan-cleanup guard added to jobs.py.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:client-architecture | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:consent-provider-fallback | attestation | Removing the unused client-only listAllDocuments helper does not change consent or provider fallback behavior.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:retry-lease-recovery | attestation | Removing the unused client-only listAllDocuments helper does not change job polling, retry, lease, or recovery behavior.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:sample-import | attestation | Removing the unused client-only listAllDocuments helper does not change sample import or polling behavior.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:search-grounded-chat | attestation | Chat, message polling, and citation contracts are unchanged; Assistant now reads document metadata from StoreProvider shared cache.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:upload-job-extraction-filing-polling | attestation | Upload and polling contracts are unchanged; completed upload state now invalidates the shared document cache.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:capture-documents | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:client-architecture | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:entities-filing-review | attestation | Removing the unused client-only listAllDocuments helper does not change entity, filing, or review APIs.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:jobs-workers | attestation | Removing the unused client-only listAllDocuments helper does not change client job polling or worker contracts.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:search-grounded-chat | attestation | Search and chat APIs are unchanged; only Assistant document-list ownership moved to the shared client cache.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | flow:upload-job-extraction-filing-polling | attestation | Capture upload and polling behavior is unchanged; this pass only moved repeated static style declarations into styles.css.
+- 2026-07-18 | e3a5449a53741f8939cc4840563033f7406533a1 | subsystem:client-architecture | attestation | Existing hash-routing and shared-cache narrative remains current; this repair detaches invalidated flights and enforces canonical redundant-safe hash matching.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:auth-vault-context | attestation | Password-reset token locking changed authn internals only; session-cookie identity, membership resolution, role enforcement, and vault-selection claims remain accurate.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:consent-provider-fallback | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:entity-filing-review-merge | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:fact-verification-provenance | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:retry-lease-recovery | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:sample-import | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | flow:upload-job-extraction-filing-polling | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:auth-vault-consent | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:capture-documents | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:client-architecture | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:data-migrations-testing-operations | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:facts-summaries | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:jobs-workers | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | 370cd5418db3fa48e06de364bfcfbd47dd6a1d64 | subsystem:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:account-export-deletion | attestation | jobs.py change is the post-fail filing dead-letter hook only; export and deletion flow unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:consent-provider-fallback | attestation | jobs.py adds the filing dead-letter hook and api.js only carries the filingFailed capture marker; consent and provider fallback unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:entity-filing-review-merge | attestation | The unfiled opener is reused unchanged via a public wrapper; merge/review resolution semantics untouched.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:fact-verification-provenance | attestation | audit.py adds the dead-letter unfiled wrapper only; fact verification and provenance unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:retry-lease-recovery | attestation | The dead-letter hook runs after fail() outside any lease and never touches lease or retry semantics.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:sample-import | attestation | Sample import shares waitForJob; the filingFailed marker only adds a field to the completed result.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:search-grounded-chat | attestation | api.js/jobs.py changes are capture-side only; chat and search contracts unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:upload-job-extraction-filing-polling | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:capture-documents | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:client-architecture | attestation | api.js gains only the additive filingFailed capture-result marker; shell, cache, and routing narrative unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:facts-summaries | attestation | audit.py change is the unfiled dead-letter wrapper; facts and summaries unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:gdpr-account | attestation | jobs.py change is the filing dead-letter hook; GDPR account behavior unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:jobs-workers | page_update | Curated page updated with the changed source contract.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:search-grounded-chat | attestation | api.js/jobs.py changes are capture-side only; search and chat unchanged.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | flow:entity-filing-review-merge | attestation | audit.py changed only by ruff formatting after the previous lock; no semantic change.
+- 2026-07-18 | e57a10dd177017b95cfcea0a2dfd77c22bdeb18b | subsystem:entities-filing-review | attestation | audit.py changed only by ruff formatting after the previous lock; no semantic change.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:account-export-deletion | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:auth-vault-context | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:encrypted-file-read | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:fact-verification-provenance | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:retry-lease-recovery | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:sample-import | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:search-grounded-chat | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | flow:upload-job-extraction-filing-polling | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:ai-extraction-provenance | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:auth-vault-consent | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:capture-documents | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:data-migrations-testing-operations | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:entities-filing-review | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:facts-summaries | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:files-crypto-storage | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:gdpr-account | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:jobs-workers | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:runtime-configuration | page_update | Curated page updated with the changed source contract.
+- 2026-08-02 | 5448cf335e2cb25d74d6c0e6c476b72d1e14e803 | subsystem:search-grounded-chat | page_update | Curated page updated with the changed source contract.

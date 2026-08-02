@@ -1,0 +1,1048 @@
+{
+  "pages": [
+    {
+      "page_id": "flow:account-export-deletion",
+      "page_sha256": "d85272ba2b30a9378268ef1ac256eb15b679ce5478d20dfe6b253d9f3696e97b",
+      "path": "docs/map/flows/account-export-deletion.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0010_auditor_integrity.py",
+          "sha256": "099d2c3e17d312837127eac14810fcc6bbaa3109f9895d3c8fae5d8594326a09"
+        },
+        {
+          "ref": "file:backend/app/domain/account.py",
+          "sha256": "b380eaf915e196f1e7d18a5f7fb4704636a9834b7a7db94717549cce6c9e8654"
+        },
+        {
+          "ref": "file:backend/app/domain/files.py",
+          "sha256": "9dd777b6c375b08efb143e6785ca174bb59145fed3d5620d9b7763373bc4e453"
+        },
+        {
+          "ref": "file:backend/app/domain/reset.py",
+          "sha256": "1092348d915885d94aa44816a427ed3f875ab9b62249873926989547cf98b628"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/account.py",
+          "sha256": "cd6a64bf83cc7ed1f7c2546305175a7e70a1c4f3732b8b0198bec3caee6b7e7c"
+        },
+        {
+          "ref": "file:backend/app/schemas.py",
+          "sha256": "589170f42c7da435b559858bc6d4cf3c80b29ca82e5bc5f7c04dfa5cc286dbd5"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:auth-vault-context",
+      "page_sha256": "f45b0632c3fde16314a51500c55b8f18e96eb1e7f745172b504533b410ec16c4",
+      "path": "docs/map/flows/auth-vault-context.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/route_policy.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/authn.py",
+          "sha256": "192a8c2ebd941f05ace3243c359867b8b2ed35f70edde3cdcb0dfa5f991f1b05"
+        },
+        {
+          "ref": "file:backend/app/context.py",
+          "sha256": "c8ba475f77da162461926cfdeceefe5bc58ae02876b43a668cf353153ebf7471"
+        },
+        {
+          "ref": "file:backend/app/route_policy.py",
+          "sha256": "503534ff6681eb37b85dfc991404c1169d377dfbdb483084116f91a4e39db43e"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:consent-provider-fallback",
+      "page_sha256": "798c7d4390dcc5ef1be9fae5d079259b8a0d9be1aa16ca95af6f3158422cbb68",
+      "path": "docs/map/flows/consent-provider-fallback.md",
+      "resolution": {
+        "base_sha": "e57a10dd177017b95cfcea0a2dfd77c22bdeb18b",
+        "changed_refs": [
+          "file:backend/app/domain/jobs.py",
+          "file:client/src/api.js"
+        ],
+        "kind": "attestation",
+        "rationale": "jobs.py adds the filing dead-letter hook and api.js only carries the filingFailed capture marker; consent and provider fallback unchanged.",
+        "verified_on": "2026-07-18"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/ai/base.py",
+          "sha256": "396cc97dcde3f8b388eb75b7e0d7e8e82e39ab453dcd2fe05436ec6a52d4a557"
+        },
+        {
+          "ref": "file:backend/app/ai/seed_engine.py",
+          "sha256": "65fadae40af874a6827379a1656d8067725f26c0b946e6e400b234813f4e60a0"
+        },
+        {
+          "ref": "file:backend/app/ai/vertex_engine.py",
+          "sha256": "0a5715024a464be40d7e52e7d07b1ebade60928ecbf215c753e9a58c391e74af"
+        },
+        {
+          "ref": "file:backend/app/authn.py",
+          "sha256": "192a8c2ebd941f05ace3243c359867b8b2ed35f70edde3cdcb0dfa5f991f1b05"
+        },
+        {
+          "ref": "file:backend/app/context.py",
+          "sha256": "c8ba475f77da162461926cfdeceefe5bc58ae02876b43a668cf353153ebf7471"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/routers/__init__.py",
+          "sha256": "4dfe7f4ac7d994bba4f89601ec01970e999d6baab8022651da999ee56732fb77"
+        },
+        {
+          "ref": "file:backend/app/settings.py",
+          "sha256": "8350c989b1fcad2cb3a13dc62598407d8b2f5327f33dcc48b25af2b088206e78"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/assistant-consent.js",
+          "sha256": "cffa201c76928e1b73e2182f461f65e3a21f0f67a5c5ce33597919c384d3e22d"
+        },
+        {
+          "ref": "file:client/src/auth/ConsentModal.jsx",
+          "sha256": "e64a9ad97f3d138093d32c69ab759b0afcf550cf6009c9fde3c78d63e9b8d9d5"
+        },
+        {
+          "ref": "file:client/src/views/Assistant.jsx",
+          "sha256": "fd6c85aabf34fa37f472a73de8bed8615011a03491f5c48bd8e75ff63116b23d"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:encrypted-file-read",
+      "page_sha256": "b8d6ed99e19be92ede30ef20df5b8e1743fba9d30a8b7b3babb1003c3af56f1f",
+      "path": "docs/map/flows/encrypted-file-read.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/routers/__init__.py",
+          "file:backend/app/storage.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/crypto.py",
+          "sha256": "5b7731c98aaee060412bd1d7891df5219d59fedd66c57552b88e6a25c2a782ca"
+        },
+        {
+          "ref": "file:backend/app/domain/files.py",
+          "sha256": "9dd777b6c375b08efb143e6785ca174bb59145fed3d5620d9b7763373bc4e453"
+        },
+        {
+          "ref": "file:backend/app/routers/__init__.py",
+          "sha256": "4dfe7f4ac7d994bba4f89601ec01970e999d6baab8022651da999ee56732fb77"
+        },
+        {
+          "ref": "file:backend/app/routers/files.py",
+          "sha256": "599d1b9b0fdb7e45d067664ae08d4bce0de714c942fd9a1f8b33e2e5d0eff6bc"
+        },
+        {
+          "ref": "file:backend/app/storage.py",
+          "sha256": "b8ed6b805fecc62e61d43a106723cf3845d7b2db45f4c525ed707181671eea72"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:entity-filing-review-merge",
+      "page_sha256": "abceb53c049ddd295b412d7c73e029ac4054487e7ce2dab52b31dbdf7ec096cb",
+      "path": "docs/map/flows/entity-filing-review-merge.md",
+      "resolution": {
+        "base_sha": "e57a10dd177017b95cfcea0a2dfd77c22bdeb18b",
+        "changed_refs": [
+          "file:backend/app/domain/audit.py"
+        ],
+        "kind": "attestation",
+        "rationale": "audit.py changed only by ruff formatting after the previous lock; no semantic change.",
+        "verified_on": "2026-07-18"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/domain/audit.py",
+          "sha256": "90206f3f39c0e6dd601abdc5a438dcb60b5db857e46ba0ba025cbd9616595090"
+        },
+        {
+          "ref": "file:backend/app/domain/filing.py",
+          "sha256": "4324ce4d425045986e6e0d0fe8339561ae953fb0bf3af12c2d162468752da9ba"
+        },
+        {
+          "ref": "file:backend/app/domain/review.py",
+          "sha256": "94343127f267729fb96967a7b3485ec99809a5f53644b058c5f793ee48ecd139"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/entities.py",
+          "sha256": "64cb0ee51094a070d9708fa298509a2a71e0282a41220f45356b1d70370e1f3c"
+        },
+        {
+          "ref": "file:backend/app/routers/review.py",
+          "sha256": "9e1444eb1ff095c88dae3de07eaca4d635edba2a2a9b6aa2243e592b77b6e77e"
+        },
+        {
+          "ref": "file:client/src/components/ReviewInbox.jsx",
+          "sha256": "ec10723d4565f5b2d5e4831b3e495d47ace8b52089efbe01d7ad54f9a2759037"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:fact-verification-provenance",
+      "page_sha256": "19ef2671d6762f0222666780e129d9cbecfc75a7ae4505fccd5bb8650d221bf9",
+      "path": "docs/map/flows/fact-verification-provenance.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/extraction.py",
+          "file:backend/app/domain/review.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/domain/extraction.py",
+          "sha256": "79e38f214140c874ada91751b45a598ac186bd5308663ff5a1b8ae80d5168a6a"
+        },
+        {
+          "ref": "file:backend/app/domain/facts.py",
+          "sha256": "682f40dc989070b31f9551fe3ba5fe4f6dba7d29f5da47fb417ad837403bc0e0"
+        },
+        {
+          "ref": "file:backend/app/domain/review.py",
+          "sha256": "94343127f267729fb96967a7b3485ec99809a5f53644b058c5f793ee48ecd139"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/routers/facts.py",
+          "sha256": "b68e0967f482c6bdda80163aa920b606949f1054e22b6f0beed3ca3e1db8038b"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:retry-lease-recovery",
+      "page_sha256": "c243496940755c79820376329a84ca450ac0941a94e714fbe419bc32a635f2a7",
+      "path": "docs/map/flows/retry-lease-recovery.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/serialization.py",
+          "file:backend/app/observability.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0003_job_queue.py",
+          "sha256": "916d3bf9ed14fab9ff23cea285bf857eab752e0220fc8c6962cf4299658e2b66"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/observability.py",
+          "sha256": "9efe43c6d3b000c2460a3ee6e774d73cdcb2aa21c97b3b944eb2f9060cbc46d0"
+        },
+        {
+          "ref": "file:backend/app/queue.py",
+          "sha256": "b38a6fe92b99ba0efea3668891cf372c1fb97ae2107dad6ff08c8c2205ff8d2d"
+        },
+        {
+          "ref": "file:backend/app/routers/jobs.py",
+          "sha256": "548011b4a40a334ca4c42f55e4e9d515ec0d06f843ca5a334700379d26ea894b"
+        },
+        {
+          "ref": "file:backend/app/worker.py",
+          "sha256": "1fa4793e0110491705e4fe7258f805a265959f7e778b844e2a407f351da80599"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:sample-import",
+      "page_sha256": "0bc3414ba7494adb47da4be363a1a6b5e4938c3459dab3eb0d6584e473bb20d1",
+      "path": "docs/map/flows/sample-import.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/documents.py",
+          "file:backend/app/domain/serialization.py",
+          "file:docs/api/openapi.json"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/domain/documents.py",
+          "sha256": "fc994660017e9db99f9446cf01536fc66fa53804c65e9b957fffc03401e5cf92"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/routers/samples.py",
+          "sha256": "bf2707f4c50a32d2a93b32916c9ea0d5f3310c7e51d08c8de757b8614a5ed919"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:docs/api/openapi.json",
+          "sha256": "9d49bf178184742184b932fd5dcaad6e3b3851a5d921b79bf9acce6259932cfd"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:search-grounded-chat",
+      "page_sha256": "27a6fdd5367488b917b14bdeceee5b1c716c6addfdbbf3ba42da9394265fe2fd",
+      "path": "docs/map/flows/search-grounded-chat.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0011_chat_run_jsonb.py",
+          "sha256": "dd546dbd4daf77d743fb535c0a53454159949bde4c32c1776f22e7a8903c5702"
+        },
+        {
+          "ref": "file:backend/app/domain/answer.py",
+          "sha256": "588fd3981a65b699c03a92031f9bb60d5654fd363acd9a1b5fd78628267a3b86"
+        },
+        {
+          "ref": "file:backend/app/domain/chat.py",
+          "sha256": "f62f6e4e9048cdbb3afb325ac650d91cdbae1aefeeb9df53a12dbd8a38543dee"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/search.py",
+          "sha256": "24de6802dd4f851b0cbc7a36604e0d628d35c24340d5af27f654a9cdbe5709fc"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/chat.py",
+          "sha256": "e9d96ac50127a169db211060137cc72876e991e4f6eb54b38929a2d1ca0897ee"
+        },
+        {
+          "ref": "file:backend/app/routers/search.py",
+          "sha256": "771837af1840334e89ade5ba300580dfa02944aecf300c95fa2d7103b3143b03"
+        },
+        {
+          "ref": "file:backend/app/schemas.py",
+          "sha256": "589170f42c7da435b559858bc6d4cf3c80b29ca82e5bc5f7c04dfa5cc286dbd5"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/assistant-consent.js",
+          "sha256": "cffa201c76928e1b73e2182f461f65e3a21f0f67a5c5ce33597919c384d3e22d"
+        },
+        {
+          "ref": "file:client/src/chat-progress.js",
+          "sha256": "61819c168b60316e47f9e567302f6c3a28225c90be81012b7d285c4b8d6f9fa1"
+        },
+        {
+          "ref": "file:client/src/views/Assistant.jsx",
+          "sha256": "fd6c85aabf34fa37f472a73de8bed8615011a03491f5c48bd8e75ff63116b23d"
+        }
+      ]
+    },
+    {
+      "page_id": "flow:upload-job-extraction-filing-polling",
+      "page_sha256": "3f976d1b09cb9a10e18848f236c6123454cbbc6279f0e54a82aa7a0ab43bcd31",
+      "path": "docs/map/flows/upload-job-extraction-filing-polling.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/serialization.py",
+          "file:backend/app/queue.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/crypto.py",
+          "sha256": "5b7731c98aaee060412bd1d7891df5219d59fedd66c57552b88e6a25c2a782ca"
+        },
+        {
+          "ref": "file:backend/app/domain/extraction.py",
+          "sha256": "79e38f214140c874ada91751b45a598ac186bd5308663ff5a1b8ae80d5168a6a"
+        },
+        {
+          "ref": "file:backend/app/domain/files.py",
+          "sha256": "9dd777b6c375b08efb143e6785ca174bb59145fed3d5620d9b7763373bc4e453"
+        },
+        {
+          "ref": "file:backend/app/domain/filing.py",
+          "sha256": "4324ce4d425045986e6e0d0fe8339561ae953fb0bf3af12c2d162468752da9ba"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/domain/uploads.py",
+          "sha256": "4150e343fe61b051ea7c9828098c0616d411023a4c25f607d5be383afe00c893"
+        },
+        {
+          "ref": "file:backend/app/filetype.py",
+          "sha256": "89d22c481ff0a827a7ff02f18bc0a6449a00aeafdf68aeaa8ca1592950164674"
+        },
+        {
+          "ref": "file:backend/app/queue.py",
+          "sha256": "b38a6fe92b99ba0efea3668891cf372c1fb97ae2107dad6ff08c8c2205ff8d2d"
+        },
+        {
+          "ref": "file:backend/app/routers/documents.py",
+          "sha256": "60ef1654e6173e6d58a7641f0b6150304e3c6278273ed87b3698afe639dc11ec"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/views/Capture.jsx",
+          "sha256": "4a92b2a98c151c660395a11f2434c192fc8e149d3247640864a24fb12b73e294"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:ai-extraction-provenance",
+      "page_sha256": "871a713618f6d589e938a5fdcb009df167040c10ad880d38d1bb90872afd896f",
+      "path": "docs/map/subsystems/ai-extraction-provenance.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/facts.py",
+          "file:backend/app/domain/jobs.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/ai/base.py",
+          "sha256": "396cc97dcde3f8b388eb75b7e0d7e8e82e39ab453dcd2fe05436ec6a52d4a557"
+        },
+        {
+          "ref": "file:backend/app/ai/schema.py",
+          "sha256": "12deea1d1919b0f2530e81dffe6c6264fefb7f36c1ca8a13a0989ade98af6165"
+        },
+        {
+          "ref": "file:backend/app/domain/extraction.py",
+          "sha256": "79e38f214140c874ada91751b45a598ac186bd5308663ff5a1b8ae80d5168a6a"
+        },
+        {
+          "ref": "file:backend/app/domain/facts.py",
+          "sha256": "682f40dc989070b31f9551fe3ba5fe4f6dba7d29f5da47fb417ad837403bc0e0"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:auth-vault-consent",
+      "page_sha256": "fc6a37b4342a0ee4911fe601f4c9a1d48b0097b7094dac90cb53524adf1395c2",
+      "path": "docs/map/subsystems/auth-vault-consent.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/route_policy.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/authn.py",
+          "sha256": "192a8c2ebd941f05ace3243c359867b8b2ed35f70edde3cdcb0dfa5f991f1b05"
+        },
+        {
+          "ref": "file:backend/app/context.py",
+          "sha256": "c8ba475f77da162461926cfdeceefe5bc58ae02876b43a668cf353153ebf7471"
+        },
+        {
+          "ref": "file:backend/app/route_policy.py",
+          "sha256": "503534ff6681eb37b85dfc991404c1169d377dfbdb483084116f91a4e39db43e"
+        },
+        {
+          "ref": "file:backend/app/routers/__init__.py",
+          "sha256": "4dfe7f4ac7d994bba4f89601ec01970e999d6baab8022651da999ee56732fb77"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:capture-documents",
+      "page_sha256": "78e3dfd325432479fe868d27fed897dfb9d0dc15870dff4c034667b5f301c1a9",
+      "path": "docs/map/subsystems/capture-documents.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/documents.py",
+          "file:backend/app/domain/serialization.py",
+          "file:docs/api/openapi.json"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/domain/documents.py",
+          "sha256": "fc994660017e9db99f9446cf01536fc66fa53804c65e9b957fffc03401e5cf92"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/domain/uploads.py",
+          "sha256": "4150e343fe61b051ea7c9828098c0616d411023a4c25f607d5be383afe00c893"
+        },
+        {
+          "ref": "file:backend/app/routers/documents.py",
+          "sha256": "60ef1654e6173e6d58a7641f0b6150304e3c6278273ed87b3698afe639dc11ec"
+        },
+        {
+          "ref": "file:backend/app/routers/samples.py",
+          "sha256": "bf2707f4c50a32d2a93b32916c9ea0d5f3310c7e51d08c8de757b8614a5ed919"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/views/Capture.jsx",
+          "sha256": "4a92b2a98c151c660395a11f2434c192fc8e149d3247640864a24fb12b73e294"
+        },
+        {
+          "ref": "file:docs/api/openapi.json",
+          "sha256": "9d49bf178184742184b932fd5dcaad6e3b3851a5d921b79bf9acce6259932cfd"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:client-architecture",
+      "page_sha256": "55bc3f038cb757b574559fcc83337a3fba7923b5c3eff99f4b6caf119ecdafe6",
+      "path": "docs/map/subsystems/client-architecture.md",
+      "resolution": {
+        "base_sha": "e57a10dd177017b95cfcea0a2dfd77c22bdeb18b",
+        "changed_refs": [
+          "file:client/src/api.js",
+          "file:client/src/views/Capture.jsx"
+        ],
+        "kind": "attestation",
+        "rationale": "api.js gains only the additive filingFailed capture-result marker; shell, cache, and routing narrative unchanged.",
+        "verified_on": "2026-07-18"
+      },
+      "sources": [
+        {
+          "ref": "file:client/src/App.jsx",
+          "sha256": "3a66011a08916aed63afef143fa0510bc23e01aeb6d2a6465a56449909bab7fd"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/assistant-consent.js",
+          "sha256": "cffa201c76928e1b73e2182f461f65e3a21f0f67a5c5ce33597919c384d3e22d"
+        },
+        {
+          "ref": "file:client/src/lib.jsx",
+          "sha256": "f1be388e7bfaf17b74330d265b644beb4d2ce38cf4ba813e2f1d716f166ef860"
+        },
+        {
+          "ref": "file:client/src/views/Assistant.jsx",
+          "sha256": "fd6c85aabf34fa37f472a73de8bed8615011a03491f5c48bd8e75ff63116b23d"
+        },
+        {
+          "ref": "file:client/src/views/Capture.jsx",
+          "sha256": "4a92b2a98c151c660395a11f2434c192fc8e149d3247640864a24fb12b73e294"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:data-migrations-testing-operations",
+      "page_sha256": "3b5bb7ade001e7e93e6f355fc17ef2d3f7abb373bd4c2abd1b630e3106870fce",
+      "path": "docs/map/subsystems/data-migrations-testing-operations.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/alembic/versions/0003_job_queue.py",
+          "file:backend/app/settings.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:.github/workflows/ci.yml",
+          "sha256": "108088f30ee3df51ff560b0f228ad9409b0f7920a89d8eb0eb22e964d8d6bdc2"
+        },
+        {
+          "ref": "file:backend/alembic/env.py",
+          "sha256": "60e005651d8a088df48c2d1b5a806e728b35b104d5b528f020d84158e5e6c114"
+        },
+        {
+          "ref": "file:backend/alembic/versions/0003_job_queue.py",
+          "sha256": "916d3bf9ed14fab9ff23cea285bf857eab752e0220fc8c6962cf4299658e2b66"
+        },
+        {
+          "ref": "file:backend/alembic/versions/0011_chat_run_jsonb.py",
+          "sha256": "dd546dbd4daf77d743fb535c0a53454159949bde4c32c1776f22e7a8903c5702"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/settings.py",
+          "sha256": "8350c989b1fcad2cb3a13dc62598407d8b2f5327f33dcc48b25af2b088206e78"
+        },
+        {
+          "ref": "file:backend/tests/conftest.py",
+          "sha256": "c60856b7b837ffd3e98964c3fa13bac2aebc9b1ad76415407793c37ea1e32963"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:entities-filing-review",
+      "page_sha256": "1e240f7181f5ea9ba4fa7067c472aff3fd82d364bd0fdf592af7aa4ed4bfbbd2",
+      "path": "docs/map/subsystems/entities-filing-review.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/jobs.py",
+          "file:backend/app/queue.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0010_auditor_integrity.py",
+          "sha256": "099d2c3e17d312837127eac14810fcc6bbaa3109f9895d3c8fae5d8594326a09"
+        },
+        {
+          "ref": "file:backend/alembic/versions/0011_chat_run_jsonb.py",
+          "sha256": "dd546dbd4daf77d743fb535c0a53454159949bde4c32c1776f22e7a8903c5702"
+        },
+        {
+          "ref": "file:backend/app/domain/audit.py",
+          "sha256": "90206f3f39c0e6dd601abdc5a438dcb60b5db857e46ba0ba025cbd9616595090"
+        },
+        {
+          "ref": "file:backend/app/domain/filing.py",
+          "sha256": "4324ce4d425045986e6e0d0fe8339561ae953fb0bf3af12c2d162468752da9ba"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/review.py",
+          "sha256": "94343127f267729fb96967a7b3485ec99809a5f53644b058c5f793ee48ecd139"
+        },
+        {
+          "ref": "file:backend/app/domain/review_identity.py",
+          "sha256": "0a71b437326e748990ac541f5e8c4ae05b7494b701e7d71ae763a5037e7e5038"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/queue.py",
+          "sha256": "b38a6fe92b99ba0efea3668891cf372c1fb97ae2107dad6ff08c8c2205ff8d2d"
+        },
+        {
+          "ref": "file:backend/app/routers/entities.py",
+          "sha256": "64cb0ee51094a070d9708fa298509a2a71e0282a41220f45356b1d70370e1f3c"
+        },
+        {
+          "ref": "file:backend/app/routers/review.py",
+          "sha256": "9e1444eb1ff095c88dae3de07eaca4d635edba2a2a9b6aa2243e592b77b6e77e"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/components/EntityCardDetail.jsx",
+          "sha256": "93a06cd096a0d7495bd95c4a92383167df8a786089ebc0d2e061d32ffc8b37de"
+        },
+        {
+          "ref": "file:client/src/components/ReviewInbox.jsx",
+          "sha256": "ec10723d4565f5b2d5e4831b3e495d47ace8b52089efbe01d7ad54f9a2759037"
+        },
+        {
+          "ref": "file:client/src/views/Entities.jsx",
+          "sha256": "006ba1ae9e9e6c99acf60cde9545b7f9548fe77551d2edbd282a5f76ce639a61"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:facts-summaries",
+      "page_sha256": "3821f3ee56f3dd7c9a4cb3f20880d80bf25fcac2efaafb374a3d58658b92fc04",
+      "path": "docs/map/subsystems/facts-summaries.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/extraction.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/domain/extraction.py",
+          "sha256": "79e38f214140c874ada91751b45a598ac186bd5308663ff5a1b8ae80d5168a6a"
+        },
+        {
+          "ref": "file:backend/app/domain/facts.py",
+          "sha256": "682f40dc989070b31f9551fe3ba5fe4f6dba7d29f5da47fb417ad837403bc0e0"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/routers/summary.py",
+          "sha256": "1c5d4118c2bfa06e86aa3a053bda434ffa01e60d6e4d2b636a728c952327c3ba"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:files-crypto-storage",
+      "page_sha256": "5811a0480da34123624cd41e4460924b554cf8d05db197909301d511ec7873bb",
+      "path": "docs/map/subsystems/files-crypto-storage.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/main.py",
+          "file:backend/app/models.py",
+          "file:backend/app/routers/files.py",
+          "file:backend/app/storage_s3.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/crypto.py",
+          "sha256": "5b7731c98aaee060412bd1d7891df5219d59fedd66c57552b88e6a25c2a782ca"
+        },
+        {
+          "ref": "file:backend/app/domain/files.py",
+          "sha256": "9dd777b6c375b08efb143e6785ca174bb59145fed3d5620d9b7763373bc4e453"
+        },
+        {
+          "ref": "file:backend/app/main.py",
+          "sha256": "4e46f7d606058ab2f500c2cdd89f7aaf75dbc76af6a72a29091c00cacf788ddd"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/files.py",
+          "sha256": "599d1b9b0fdb7e45d067664ae08d4bce0de714c942fd9a1f8b33e2e5d0eff6bc"
+        },
+        {
+          "ref": "file:backend/app/storage.py",
+          "sha256": "b8ed6b805fecc62e61d43a106723cf3845d7b2db45f4c525ed707181671eea72"
+        },
+        {
+          "ref": "file:backend/app/storage_s3.py",
+          "sha256": "3fe44bb9c8d409d7d859c2998e0e7bd171ac587bf3c0ae9d0db9535a8a22e55a"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:gdpr-account",
+      "page_sha256": "159891b75c7698e1f1f64bad64f85181cd3aed13ceb3137c3508e62e4251e058",
+      "path": "docs/map/subsystems/gdpr-account.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0010_auditor_integrity.py",
+          "sha256": "099d2c3e17d312837127eac14810fcc6bbaa3109f9895d3c8fae5d8594326a09"
+        },
+        {
+          "ref": "file:backend/app/domain/account.py",
+          "sha256": "b380eaf915e196f1e7d18a5f7fb4704636a9834b7a7db94717549cce6c9e8654"
+        },
+        {
+          "ref": "file:backend/app/domain/files.py",
+          "sha256": "9dd777b6c375b08efb143e6785ca174bb59145fed3d5620d9b7763373bc4e453"
+        },
+        {
+          "ref": "file:backend/app/domain/reset.py",
+          "sha256": "1092348d915885d94aa44816a427ed3f875ab9b62249873926989547cf98b628"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/account.py",
+          "sha256": "cd6a64bf83cc7ed1f7c2546305175a7e70a1c4f3732b8b0198bec3caee6b7e7c"
+        },
+        {
+          "ref": "file:backend/app/schemas.py",
+          "sha256": "589170f42c7da435b559858bc6d4cf3c80b29ca82e5bc5f7c04dfa5cc286dbd5"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:jobs-workers",
+      "page_sha256": "51b9d155cd9ee6a0f7e6b20abb599bbb37ee6107a70d21f59ee67221358b0f4f",
+      "path": "docs/map/subsystems/jobs-workers.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/domain/serialization.py",
+          "file:backend/app/observability.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0003_job_queue.py",
+          "sha256": "916d3bf9ed14fab9ff23cea285bf857eab752e0220fc8c6962cf4299658e2b66"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/serialization.py",
+          "sha256": "e066aeccabec0a243633e8bb09708297f47aa337231a5505bed69e5fd675f2b1"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/observability.py",
+          "sha256": "9efe43c6d3b000c2460a3ee6e774d73cdcb2aa21c97b3b944eb2f9060cbc46d0"
+        },
+        {
+          "ref": "file:backend/app/queue.py",
+          "sha256": "b38a6fe92b99ba0efea3668891cf372c1fb97ae2107dad6ff08c8c2205ff8d2d"
+        },
+        {
+          "ref": "file:backend/app/routers/jobs.py",
+          "sha256": "548011b4a40a334ca4c42f55e4e9d515ec0d06f843ca5a334700379d26ea894b"
+        },
+        {
+          "ref": "file:backend/app/worker.py",
+          "sha256": "1fa4793e0110491705e4fe7258f805a265959f7e778b844e2a407f351da80599"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:runtime-configuration",
+      "page_sha256": "6395079edc95ec352f735fc6b8e37af1e35f08a7b292fc10082d7749abdd79ea",
+      "path": "docs/map/subsystems/runtime-configuration.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [
+          "file:backend/app/observability.py",
+          "file:backend/app/route_policy.py",
+          "file:backend/app/routers/health.py"
+        ],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/app/main.py",
+          "sha256": "4e46f7d606058ab2f500c2cdd89f7aaf75dbc76af6a72a29091c00cacf788ddd"
+        },
+        {
+          "ref": "file:backend/app/observability.py",
+          "sha256": "9efe43c6d3b000c2460a3ee6e774d73cdcb2aa21c97b3b944eb2f9060cbc46d0"
+        },
+        {
+          "ref": "file:backend/app/route_policy.py",
+          "sha256": "503534ff6681eb37b85dfc991404c1169d377dfbdb483084116f91a4e39db43e"
+        },
+        {
+          "ref": "file:backend/app/routers/health.py",
+          "sha256": "8ffd976ef7eb588472f3c4ace6e7584ab4ac3c670d600a031bd2176d6b29225a"
+        },
+        {
+          "ref": "file:backend/app/settings.py",
+          "sha256": "8350c989b1fcad2cb3a13dc62598407d8b2f5327f33dcc48b25af2b088206e78"
+        },
+        {
+          "ref": "file:start.sh",
+          "sha256": "063fd8a6707a3b41ad430be2b674e4535783c9263c9c1e185db6cdb9e3def2c5"
+        }
+      ]
+    },
+    {
+      "page_id": "subsystem:search-grounded-chat",
+      "page_sha256": "b383a692fd472b84ff59626308c3ada3cca1a8474f9ac4a68cfecabe028ff5bd",
+      "path": "docs/map/subsystems/search-grounded-chat.md",
+      "resolution": {
+        "base_sha": "5448cf335e2cb25d74d6c0e6c476b72d1e14e803",
+        "changed_refs": [],
+        "kind": "page_update",
+        "rationale": "Curated page updated with the changed source contract.",
+        "verified_on": "2026-08-02"
+      },
+      "sources": [
+        {
+          "ref": "file:backend/alembic/versions/0011_chat_run_jsonb.py",
+          "sha256": "dd546dbd4daf77d743fb535c0a53454159949bde4c32c1776f22e7a8903c5702"
+        },
+        {
+          "ref": "file:backend/app/domain/answer.py",
+          "sha256": "588fd3981a65b699c03a92031f9bb60d5654fd363acd9a1b5fd78628267a3b86"
+        },
+        {
+          "ref": "file:backend/app/domain/chat.py",
+          "sha256": "f62f6e4e9048cdbb3afb325ac650d91cdbae1aefeeb9df53a12dbd8a38543dee"
+        },
+        {
+          "ref": "file:backend/app/domain/jobs.py",
+          "sha256": "171b0da118abf2c32d78ccd0a60fc1531222edc149c305d49cb3dff86371e927"
+        },
+        {
+          "ref": "file:backend/app/domain/search.py",
+          "sha256": "24de6802dd4f851b0cbc7a36604e0d628d35c24340d5af27f654a9cdbe5709fc"
+        },
+        {
+          "ref": "file:backend/app/models.py",
+          "sha256": "f85c84c9fffe4915881b46c95c988a23cfaa4cfe626502f50d6fce69a95be5b8"
+        },
+        {
+          "ref": "file:backend/app/routers/chat.py",
+          "sha256": "e9d96ac50127a169db211060137cc72876e991e4f6eb54b38929a2d1ca0897ee"
+        },
+        {
+          "ref": "file:backend/app/routers/search.py",
+          "sha256": "771837af1840334e89ade5ba300580dfa02944aecf300c95fa2d7103b3143b03"
+        },
+        {
+          "ref": "file:backend/app/schemas.py",
+          "sha256": "589170f42c7da435b559858bc6d4cf3c80b29ca82e5bc5f7c04dfa5cc286dbd5"
+        },
+        {
+          "ref": "file:client/src/api.js",
+          "sha256": "e1e692a793a6b2aeff54d1e85e042af028865e49dbd2b163fc627794ba7bcd9c"
+        },
+        {
+          "ref": "file:client/src/assistant-consent.js",
+          "sha256": "cffa201c76928e1b73e2182f461f65e3a21f0f67a5c5ce33597919c384d3e22d"
+        },
+        {
+          "ref": "file:client/src/chat-progress.js",
+          "sha256": "61819c168b60316e47f9e567302f6c3a28225c90be81012b7d285c4b8d6f9fa1"
+        },
+        {
+          "ref": "file:client/src/views/Assistant.jsx",
+          "sha256": "fd6c85aabf34fa37f472a73de8bed8615011a03491f5c48bd8e75ff63116b23d"
+        }
+      ]
+    }
+  ],
+  "schema_version": 1
+}

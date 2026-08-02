@@ -1,0 +1,5278 @@
+{
+  "capabilities": [
+    "curated_map",
+    "inventory",
+    "maintenance",
+    "narrative_audit",
+    "orientation",
+    "semantic_impact",
+    "structural_impact"
+  ],
+  "client_methods": [
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/History.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:activity",
+      "name": "activity",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/activity",
+          "structural_path": "/api/activity"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Assistant.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:chat",
+      "name": "chat",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/chat",
+          "structural_path": "/api/chat"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/EntityCardDetail.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:confirmEntity",
+      "name": "confirmEntity",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/entities/{param}/confirm",
+          "structural_path": "/api/entities/{param}/confirm"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/TokenScreen.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:confirmPasswordReset",
+      "name": "confirmPasswordReset",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/password-reset/confirm",
+          "structural_path": "/api/auth/password-reset/confirm"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/EntityCreateDialog.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:createEntity",
+      "name": "createEntity",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/entities",
+          "structural_path": "/api/entities"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/EntityCardDetail.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:createEntityFact",
+      "name": "createEntityFact",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/entities/{param}/facts",
+          "structural_path": "/api/entities/{param}/facts"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/DocumentDrawer.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:document",
+      "name": "document",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/documents/{id}",
+          "structural_path": "/api/documents/{param}"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/EntityCardDetail.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:entityCard",
+      "name": "entityCard",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/entities/{param}",
+          "structural_path": "/api/entities/{param}"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/api.js"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:importSample",
+      "name": "importSample",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/samples/import",
+          "structural_path": "/api/samples/import"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [
+        "clientapi:importSample"
+      ],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Capture.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:importSampleAndWait",
+      "name": "importSampleAndWait",
+      "routes": []
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/api.js"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:job",
+      "name": "job",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/jobs/{id}",
+          "structural_path": "/api/jobs/{param}"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/lib.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:listDocuments",
+      "name": "listDocuments",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/documents?{param}",
+          "structural_path": "/api/documents"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/UnlinkDialog.jsx",
+        "client/src/views/Entities.jsx",
+        "client/src/views/Familie.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:listEntities",
+      "name": "listEntities",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/entities{param}",
+          "structural_path": "/api/entities{param}"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/ReviewInbox.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:listReviewItems",
+      "name": "listReviewItems",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/review-items?status={param}",
+          "structural_path": "/api/review-items"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/AuthProvider.jsx",
+        "client/src/auth/AuthScreen.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:login",
+      "name": "login",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/login",
+          "structural_path": "/api/auth/login"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/AuthProvider.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:logout",
+      "name": "logout",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/logout",
+          "structural_path": "/api/auth/logout"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/AuthProvider.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:me",
+      "name": "me",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/auth/me",
+          "structural_path": "/api/auth/me"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Assistant.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:messages",
+      "name": "messages",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/messages",
+          "structural_path": "/api/messages"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/EmailVerificationBanner.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:requestEmailVerification",
+      "name": "requestEmailVerification",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/verify-email/request",
+          "structural_path": "/api/auth/verify-email/request"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/AuthScreen.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:requestPasswordReset",
+      "name": "requestPasswordReset",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/password-reset/request",
+          "structural_path": "/api/auth/password-reset/request"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/App.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:reset",
+      "name": "reset",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/reset",
+          "structural_path": "/api/reset"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/ReviewInbox.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:resolveReviewItem",
+      "name": "resolveReviewItem",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/review-items/{param}/resolve",
+          "structural_path": "/api/review-items/{param}/resolve"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Capture.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:samples",
+      "name": "samples",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/samples",
+          "structural_path": "/api/samples"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Assistant.jsx",
+        "client/src/views/Capture.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:setAiConsent",
+      "name": "setAiConsent",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/ai-consent",
+          "structural_path": "/api/auth/ai-consent"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/AuthScreen.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:signup",
+      "name": "signup",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/signup",
+          "structural_path": "/api/auth/signup"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/lib.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:summary",
+      "name": "summary",
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/api/summary",
+          "structural_path": "/api/summary"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/UnlinkDialog.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:unlinkEntity",
+      "name": "unlinkEntity",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/entities/{param}/unlink",
+          "structural_path": "/api/entities/{param}/unlink"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/api.js"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:upload",
+      "name": "upload",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/upload",
+          "structural_path": "/api/upload"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [
+        "clientapi:upload"
+      ],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/views/Capture.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:uploadAndWait",
+      "name": "uploadAndWait",
+      "routes": []
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/auth/TokenScreen.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:verifyEmail",
+      "name": "verifyEmail",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/auth/verify-email",
+          "structural_path": "/api/auth/verify-email"
+        }
+      ]
+    },
+    {
+      "calls_client_methods": [],
+      "confidence": "exact",
+      "consumers": [
+        "client/src/components/EntityCardDetail.jsx",
+        "client/src/views/DatabaseView.jsx",
+        "client/src/views/Fakten.jsx"
+      ],
+      "file": "client/src/api.js",
+      "id": "clientapi:verifyFact",
+      "name": "verifyFact",
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/api/facts/{id}/verify",
+          "structural_path": "/api/facts/{param}/verify"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "handler": "app.domain.jobs._run_auditor_job",
+      "id": "job:auditor.nightly",
+      "job_type": "auditor.nightly"
+    },
+    {
+      "handler": "app.domain.jobs.run_chat_answer_job_body",
+      "id": "job:chat.answer",
+      "job_type": "chat.answer"
+    },
+    {
+      "handler": "app.domain.jobs.run_filing_job_body",
+      "id": "job:document.file",
+      "job_type": "document.file"
+    },
+    {
+      "handler": "app.domain.jobs.run_extraction_job_body",
+      "id": "job:document.process",
+      "job_type": "document.process"
+    },
+    {
+      "handler": "app.domain.jobs.run_reprocess_job_body",
+      "id": "job:document.reprocess",
+      "job_type": "document.reprocess"
+    }
+  ],
+  "migrations": [
+    {
+      "down_revision": null,
+      "file": "backend/alembic/versions/0001_baseline.py",
+      "id": "migration:0001",
+      "revision": "0001",
+      "tables": [
+        "audit_events",
+        "document_amounts",
+        "document_dates",
+        "document_tags",
+        "document_trust_flags",
+        "documents",
+        "extracted_field_evidence",
+        "extraction_runs",
+        "fact_candidates",
+        "fact_provenance",
+        "fact_revisions",
+        "facts",
+        "file_objects",
+        "messages",
+        "ocr_evidence",
+        "persons",
+        "processing_jobs",
+        "users",
+        "vault_members",
+        "vaults"
+      ]
+    },
+    {
+      "down_revision": "0001",
+      "file": "backend/alembic/versions/0002_auth.py",
+      "id": "migration:0002",
+      "revision": "0002",
+      "tables": [
+        "auth_tokens",
+        "sessions",
+        "users"
+      ]
+    },
+    {
+      "down_revision": "0002",
+      "file": "backend/alembic/versions/0003_job_queue.py",
+      "id": "migration:0003",
+      "revision": "0003",
+      "tables": [
+        "processing_jobs"
+      ]
+    },
+    {
+      "down_revision": "0003",
+      "file": "backend/alembic/versions/0004_encryption.py",
+      "id": "migration:0004",
+      "revision": "0004",
+      "tables": [
+        "file_objects",
+        "vault_keys"
+      ]
+    },
+    {
+      "down_revision": "0004",
+      "file": "backend/alembic/versions/0005_fts_search.py",
+      "id": "migration:0005",
+      "revision": "0005",
+      "tables": [
+        "ocr_evidence"
+      ]
+    },
+    {
+      "down_revision": "0005",
+      "file": "backend/alembic/versions/0006_entities.py",
+      "id": "migration:0006",
+      "revision": "0006",
+      "tables": [
+        "document_entities",
+        "entities",
+        "entity_constraints",
+        "entity_events",
+        "entity_identifiers",
+        "entity_mentions",
+        "fact_candidates",
+        "facts",
+        "persons",
+        "review_items"
+      ]
+    },
+    {
+      "down_revision": "0006",
+      "file": "backend/alembic/versions/0007_constraint_pair_unique.py",
+      "id": "migration:0007",
+      "revision": "0007",
+      "tables": [
+        "entity_constraints"
+      ]
+    },
+    {
+      "down_revision": "0007",
+      "file": "backend/alembic/versions/0008_user_context.py",
+      "id": "migration:0008",
+      "revision": "0008",
+      "tables": [
+        "audit_events",
+        "documents"
+      ]
+    },
+    {
+      "down_revision": "0008",
+      "file": "backend/alembic/versions/0009_answer_ladder.py",
+      "id": "migration:0009",
+      "revision": "0009",
+      "tables": [
+        "chat_runs",
+        "messages"
+      ]
+    },
+    {
+      "down_revision": "0009",
+      "file": "backend/alembic/versions/0010_auditor_integrity.py",
+      "id": "migration:0010",
+      "revision": "0010",
+      "tables": [
+        "audit_runs",
+        "entities",
+        "review_items"
+      ]
+    },
+    {
+      "down_revision": "0010",
+      "file": "backend/alembic/versions/0011_chat_run_jsonb.py",
+      "id": "migration:0011",
+      "revision": "0011",
+      "tables": [
+        "chat_runs"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "class_name": "AuditEvent",
+      "foreign_keys": [
+        {
+          "column": "actor_user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "subject_person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:AuditEvent",
+      "module": "app.models",
+      "relationships": [],
+      "table": "audit_events"
+    },
+    {
+      "class_name": "AuditRun",
+      "foreign_keys": [
+        {
+          "column": "processing_job_id",
+          "target": "processing_jobs.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:AuditRun",
+      "module": "app.models",
+      "relationships": [],
+      "table": "audit_runs"
+    },
+    {
+      "class_name": "AuthSession",
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "target": "users.id"
+        }
+      ],
+      "id": "model:AuthSession",
+      "module": "app.models",
+      "relationships": [],
+      "table": "sessions"
+    },
+    {
+      "class_name": "AuthToken",
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "target": "users.id"
+        }
+      ],
+      "id": "model:AuthToken",
+      "module": "app.models",
+      "relationships": [],
+      "table": "auth_tokens"
+    },
+    {
+      "class_name": "ChatRun",
+      "foreign_keys": [
+        {
+          "column": "assistant_message_id",
+          "target": "messages.id"
+        },
+        {
+          "column": "processing_job_id",
+          "target": "processing_jobs.id"
+        },
+        {
+          "column": "subject_person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:ChatRun",
+      "module": "app.models",
+      "relationships": [],
+      "table": "chat_runs"
+    },
+    {
+      "class_name": "Document",
+      "foreign_keys": [
+        {
+          "column": "file_object_id",
+          "target": "file_objects.id"
+        },
+        {
+          "column": "subject_person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:Document",
+      "module": "app.models",
+      "relationships": [
+        {
+          "name": "file_object",
+          "target": "model:FileObject"
+        },
+        {
+          "name": "person",
+          "target": "model:Person"
+        }
+      ],
+      "table": "documents"
+    },
+    {
+      "class_name": "DocumentAmount",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        }
+      ],
+      "id": "model:DocumentAmount",
+      "module": "app.models",
+      "relationships": [],
+      "table": "document_amounts"
+    },
+    {
+      "class_name": "DocumentDate",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        }
+      ],
+      "id": "model:DocumentDate",
+      "module": "app.models",
+      "relationships": [],
+      "table": "document_dates"
+    },
+    {
+      "class_name": "DocumentEntity",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:DocumentEntity",
+      "module": "app.models",
+      "relationships": [],
+      "table": "document_entities"
+    },
+    {
+      "class_name": "DocumentTag",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        }
+      ],
+      "id": "model:DocumentTag",
+      "module": "app.models",
+      "relationships": [],
+      "table": "document_tags"
+    },
+    {
+      "class_name": "DocumentTrustFlag",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        }
+      ],
+      "id": "model:DocumentTrustFlag",
+      "module": "app.models",
+      "relationships": [],
+      "table": "document_trust_flags"
+    },
+    {
+      "class_name": "Entity",
+      "foreign_keys": [
+        {
+          "column": "merged_into_entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:Entity",
+      "module": "app.models",
+      "relationships": [
+        {
+          "name": "person",
+          "target": "model:Person"
+        }
+      ],
+      "table": "entities"
+    },
+    {
+      "class_name": "EntityConstraint",
+      "foreign_keys": [
+        {
+          "column": "entity_a_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "entity_b_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:EntityConstraint",
+      "module": "app.models",
+      "relationships": [],
+      "table": "entity_constraints"
+    },
+    {
+      "class_name": "EntityEvent",
+      "foreign_keys": [
+        {
+          "column": "source_entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "target_entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:EntityEvent",
+      "module": "app.models",
+      "relationships": [],
+      "table": "entity_events"
+    },
+    {
+      "class_name": "EntityIdentifier",
+      "foreign_keys": [
+        {
+          "column": "entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:EntityIdentifier",
+      "module": "app.models",
+      "relationships": [],
+      "table": "entity_identifiers"
+    },
+    {
+      "class_name": "EntityMention",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "extraction_run_id",
+          "target": "extraction_runs.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:EntityMention",
+      "module": "app.models",
+      "relationships": [],
+      "table": "entity_mentions"
+    },
+    {
+      "class_name": "ExtractedFieldEvidence",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "extraction_run_id",
+          "target": "extraction_runs.id"
+        },
+        {
+          "column": "ocr_evidence_id",
+          "target": "ocr_evidence.id"
+        }
+      ],
+      "id": "model:ExtractedFieldEvidence",
+      "module": "app.models",
+      "relationships": [],
+      "table": "extracted_field_evidence"
+    },
+    {
+      "class_name": "ExtractionRun",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "processing_job_id",
+          "target": "processing_jobs.id"
+        }
+      ],
+      "id": "model:ExtractionRun",
+      "module": "app.models",
+      "relationships": [],
+      "table": "extraction_runs"
+    },
+    {
+      "class_name": "Fact",
+      "foreign_keys": [
+        {
+          "column": "source_document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "subject_entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:Fact",
+      "module": "app.models",
+      "relationships": [
+        {
+          "name": "subject_entity",
+          "target": "model:Entity"
+        }
+      ],
+      "table": "facts"
+    },
+    {
+      "class_name": "FactCandidate",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "extraction_run_id",
+          "target": "extraction_runs.id"
+        },
+        {
+          "column": "subject_entity_id",
+          "target": "entities.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:FactCandidate",
+      "module": "app.models",
+      "relationships": [],
+      "table": "fact_candidates"
+    },
+    {
+      "class_name": "FactProvenance",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "extraction_run_id",
+          "target": "extraction_runs.id"
+        },
+        {
+          "column": "fact_revision_id",
+          "target": "fact_revisions.id"
+        },
+        {
+          "column": "field_evidence_id",
+          "target": "extracted_field_evidence.id"
+        },
+        {
+          "column": "ocr_evidence_id",
+          "target": "ocr_evidence.id"
+        }
+      ],
+      "id": "model:FactProvenance",
+      "module": "app.models",
+      "relationships": [],
+      "table": "fact_provenance"
+    },
+    {
+      "class_name": "FactRevision",
+      "foreign_keys": [
+        {
+          "column": "candidate_id",
+          "target": "fact_candidates.id"
+        },
+        {
+          "column": "changed_by_user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "fact_id",
+          "target": "facts.id"
+        }
+      ],
+      "id": "model:FactRevision",
+      "module": "app.models",
+      "relationships": [],
+      "table": "fact_revisions"
+    },
+    {
+      "class_name": "FileObject",
+      "foreign_keys": [
+        {
+          "column": "created_by_user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:FileObject",
+      "module": "app.models",
+      "relationships": [],
+      "table": "file_objects"
+    },
+    {
+      "class_name": "Message",
+      "foreign_keys": [
+        {
+          "column": "subject_person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:Message",
+      "module": "app.models",
+      "relationships": [],
+      "table": "messages"
+    },
+    {
+      "class_name": "OcrEvidence",
+      "foreign_keys": [
+        {
+          "column": "extraction_run_id",
+          "target": "extraction_runs.id"
+        },
+        {
+          "column": "file_object_id",
+          "target": "file_objects.id"
+        }
+      ],
+      "id": "model:OcrEvidence",
+      "module": "app.models",
+      "relationships": [],
+      "table": "ocr_evidence"
+    },
+    {
+      "class_name": "Person",
+      "foreign_keys": [
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:Person",
+      "module": "app.models",
+      "relationships": [],
+      "table": "persons"
+    },
+    {
+      "class_name": "ProcessingJob",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "file_object_id",
+          "target": "file_objects.id"
+        },
+        {
+          "column": "requested_by_user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:ProcessingJob",
+      "module": "app.models",
+      "relationships": [],
+      "table": "processing_jobs"
+    },
+    {
+      "class_name": "ReviewItem",
+      "foreign_keys": [
+        {
+          "column": "document_id",
+          "target": "documents.id"
+        },
+        {
+          "column": "resolved_by_user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:ReviewItem",
+      "module": "app.models",
+      "relationships": [],
+      "table": "review_items"
+    },
+    {
+      "class_name": "User",
+      "foreign_keys": [],
+      "id": "model:User",
+      "module": "app.models",
+      "relationships": [],
+      "table": "users"
+    },
+    {
+      "class_name": "Vault",
+      "foreign_keys": [
+        {
+          "column": "owner_user_id",
+          "target": "users.id"
+        }
+      ],
+      "id": "model:Vault",
+      "module": "app.models",
+      "relationships": [],
+      "table": "vaults"
+    },
+    {
+      "class_name": "VaultKey",
+      "foreign_keys": [
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:VaultKey",
+      "module": "app.models",
+      "relationships": [],
+      "table": "vault_keys"
+    },
+    {
+      "class_name": "VaultMember",
+      "foreign_keys": [
+        {
+          "column": "person_id",
+          "target": "persons.id"
+        },
+        {
+          "column": "user_id",
+          "target": "users.id"
+        },
+        {
+          "column": "vault_id",
+          "target": "vaults.id"
+        }
+      ],
+      "id": "model:VaultMember",
+      "module": "app.models",
+      "relationships": [],
+      "table": "vault_members"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "calls_route",
+      "source": "clientapi:activity",
+      "target": "route:GET:/api/activity"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:chat",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:confirmEntity",
+      "target": "route:POST:/api/entities/{entity_id}/confirm"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:confirmPasswordReset",
+      "target": "route:POST:/api/auth/password-reset/confirm"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:createEntity",
+      "target": "route:POST:/api/entities"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:createEntityFact",
+      "target": "route:POST:/api/entities/{entity_id}/facts"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:document",
+      "target": "route:GET:/api/documents/{document_id}"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:entityCard",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:importSample",
+      "target": "route:POST:/api/samples/import"
+    },
+    {
+      "kind": "calls_client_method",
+      "source": "clientapi:importSampleAndWait",
+      "target": "clientapi:importSample"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:job",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:listDocuments",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:listReviewItems",
+      "target": "route:GET:/api/review-items"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:login",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:logout",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:me",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:messages",
+      "target": "route:GET:/api/messages"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:requestEmailVerification",
+      "target": "route:POST:/api/auth/verify-email/request"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:requestPasswordReset",
+      "target": "route:POST:/api/auth/password-reset/request"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:reset",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:resolveReviewItem",
+      "target": "route:POST:/api/review-items/{item_id}/resolve"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:samples",
+      "target": "route:GET:/api/samples"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:setAiConsent",
+      "target": "route:POST:/api/auth/ai-consent"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:signup",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:summary",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:unlinkEntity",
+      "target": "route:POST:/api/entities/{entity_id}/unlink"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:upload",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "calls_client_method",
+      "source": "clientapi:uploadAndWait",
+      "target": "clientapi:upload"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:verifyEmail",
+      "target": "route:POST:/api/auth/verify-email"
+    },
+    {
+      "kind": "calls_route",
+      "source": "clientapi:verifyFact",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0002",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0003",
+      "target": "migration:0002"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0004",
+      "target": "migration:0003"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0005",
+      "target": "migration:0004"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0006",
+      "target": "migration:0005"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0007",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0008",
+      "target": "migration:0007"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0009",
+      "target": "migration:0008"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0010",
+      "target": "migration:0009"
+    },
+    {
+      "kind": "down_revision",
+      "source": "migration:0011",
+      "target": "migration:0010"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:AuditEvent",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:AuditEvent",
+      "target": "migration:0008"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditEvent",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditEvent",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditEvent",
+      "target": "model:User"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditEvent",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:AuditRun",
+      "target": "migration:0010"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditRun",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuditRun",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:AuthSession",
+      "target": "migration:0002"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuthSession",
+      "target": "model:User"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:AuthToken",
+      "target": "migration:0002"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:AuthToken",
+      "target": "model:User"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ChatRun",
+      "target": "migration:0009"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ChatRun",
+      "target": "migration:0011"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ChatRun",
+      "target": "model:Message"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ChatRun",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ChatRun",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ChatRun",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Document",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Document",
+      "target": "migration:0008"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Document",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Document",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Document",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "relationship_to",
+      "source": "model:Document",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "relationship_to",
+      "source": "model:Document",
+      "target": "model:Person"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:DocumentAmount",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentAmount",
+      "target": "model:Document"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:DocumentDate",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentDate",
+      "target": "model:Document"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:DocumentEntity",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentEntity",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentEntity",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentEntity",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:DocumentTag",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentTag",
+      "target": "model:Document"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:DocumentTrustFlag",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:DocumentTrustFlag",
+      "target": "model:Document"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Entity",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Entity",
+      "target": "migration:0010"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Entity",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Entity",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Entity",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "relationship_to",
+      "source": "model:Entity",
+      "target": "model:Person"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:EntityConstraint",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:EntityConstraint",
+      "target": "migration:0007"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityConstraint",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityConstraint",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:EntityEvent",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityEvent",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityEvent",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:EntityIdentifier",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityIdentifier",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityIdentifier",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:EntityMention",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityMention",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityMention",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityMention",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:EntityMention",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ExtractedFieldEvidence",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ExtractedFieldEvidence",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ExtractedFieldEvidence",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ExtractedFieldEvidence",
+      "target": "model:OcrEvidence"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ExtractionRun",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ExtractionRun",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ExtractionRun",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Fact",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Fact",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Fact",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Fact",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Fact",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "relationship_to",
+      "source": "model:Fact",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FactCandidate",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FactCandidate",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactCandidate",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactCandidate",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactCandidate",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactCandidate",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FactProvenance",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactProvenance",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactProvenance",
+      "target": "model:ExtractedFieldEvidence"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactProvenance",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactProvenance",
+      "target": "model:FactRevision"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactProvenance",
+      "target": "model:OcrEvidence"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FactRevision",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactRevision",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactRevision",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FactRevision",
+      "target": "model:User"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FileObject",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:FileObject",
+      "target": "migration:0004"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FileObject",
+      "target": "model:User"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:FileObject",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Message",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Message",
+      "target": "migration:0009"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Message",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Message",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:OcrEvidence",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:OcrEvidence",
+      "target": "migration:0005"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:OcrEvidence",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:OcrEvidence",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Person",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Person",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Person",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ProcessingJob",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ProcessingJob",
+      "target": "migration:0003"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ProcessingJob",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ProcessingJob",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ProcessingJob",
+      "target": "model:User"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ProcessingJob",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ReviewItem",
+      "target": "migration:0006"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:ReviewItem",
+      "target": "migration:0010"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ReviewItem",
+      "target": "model:Document"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ReviewItem",
+      "target": "model:User"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:ReviewItem",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:User",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:User",
+      "target": "migration:0002"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:Vault",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:Vault",
+      "target": "model:User"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:VaultKey",
+      "target": "migration:0004"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:VaultKey",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "changed_in_migration",
+      "source": "model:VaultMember",
+      "target": "migration:0001"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:VaultMember",
+      "target": "model:Person"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:VaultMember",
+      "target": "model:User"
+    },
+    {
+      "kind": "foreign_key_to",
+      "source": "model:VaultMember",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:AuditRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "model:VaultMember"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:GET:/api/account/export"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/auth/password-reset/request"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/auth/verify-email"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_account.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_activity.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_activity.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_activity.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_activity.py",
+      "target": "route:GET:/api/activity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:ExtractedFieldEvidence"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:OcrEvidence"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "route:DELETE:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "route:POST:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_ai.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:ChatRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:Message"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "route:GET:/api/account/export"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "route:GET:/api/messages"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_answer_migration.py",
+      "target": "model:ChatRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:AuditRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:EntityEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:FactProvenance"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:FactRevision"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_audit.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "model:AuthSession"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "model:AuthToken"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/password-reset/confirm"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/password-reset/request"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/verify-email"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/auth/verify-email/request"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_auth.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:AuthSession"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:AuthToken"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "model:VaultMember"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/auth/verify-email"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_authz.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/documents/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/file/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/messages"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/samples"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/samples/import"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_compat_api.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/documents/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/health"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/ready"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_contract_shapes.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "model:VaultKey"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "route:GET:/api/file/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_crypto.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:DocumentAmount"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:DocumentDate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:EntityEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "route:GET:/api/entities"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "route:GET:/api/review-items"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_api.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:EntityEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:GET:/api/entities"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:POST:/api/entities/merge"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:POST:/api/entities/{entity_id}/confirm"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:POST:/api/entities/{entity_id}/facts"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_merge.py",
+      "target": "route:POST:/api/entities/{entity_id}/unmerge"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_entities_model.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_filing.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:AuditRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:EntityEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:FactProvenance"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:FactRevision"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:GET:/api/health"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:GET:/api/ready"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_lifecycle.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_load_smoke.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:FactProvenance"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:FactRevision"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "route:GET:/api/activity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "route:POST:/api/entities"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "route:POST:/api/entities/{entity_id}/facts"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_manual_cards.py",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_pagination.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_pagination.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_pagination.py",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_pagination.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_postgres_parity.py",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_postgres_parity.py",
+      "target": "route:GET:/api/documents/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_postgres_parity.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:AuditRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:GET:/api/samples"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:POST:/api/samples/import"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_queue.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:DocumentAmount"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:DocumentDate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:DocumentTag"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:DocumentTrustFlag"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:OcrEvidence"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "route:DELETE:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "route:POST:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_reprocess.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:Entity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:EntityConstraint"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:FactCandidate"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:FactProvenance"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:FactRevision"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:ProcessingJob"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "route:GET:/api/review-items"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_review.py",
+      "target": "route:POST:/api/review-items/{item_id}/resolve"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "model:OcrEvidence"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "model:Person"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_search.py",
+      "target": "route:GET:/api/search"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:Vault"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "model:VaultMember"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:DELETE:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/auth/me"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/documents/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/entities"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/file/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/search"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/ai-consent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/login"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/logout"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/password-reset/confirm"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/password-reset/request"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/signup"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/auth/verify-email"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/entities/merge"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/entities/{entity_id}/confirm"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/entities/{entity_id}/unlink"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/entities/{entity_id}/unmerge"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/reset"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/samples/import"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_security_adversarial.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_serialization_perf.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_serialization_perf.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_serialization_perf.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "model:Fact"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:GET:/api/documents"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:GET:/api/health"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:GET:/api/jobs/{job_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:GET:/api/messages"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:GET:/api/summary"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:POST:/api/chat"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:POST:/api/facts/{fact_id}/verify"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_smoke_flows.py",
+      "target": "route:POST:/api/upload"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:AuditEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:DocumentEntity"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:EntityEvent"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:EntityIdentifier"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:EntityMention"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:ExtractionRun"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:ReviewItem"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "model:User"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "route:GET:/api/entities"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "route:GET:/api/entities/{entity_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_unlink.py",
+      "target": "route:POST:/api/entities/{entity_id}/unlink"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "model:Document"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "model:FileObject"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "route:GET:/api/file/{document_id}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "route:GET:/api/samples/file/{name}"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "route:POST:/api/samples/import"
+    },
+    {
+      "kind": "tests",
+      "source": "test:backend/tests/test_uploads.py",
+      "target": "route:POST:/api/upload"
+    }
+  ],
+  "routes": [
+    {
+      "access": "authenticated",
+      "dev_only": false,
+      "handler": "app.routers.account.account_delete",
+      "id": "route:DELETE:/api/account",
+      "method": "DELETE",
+      "path": "/api/account",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/account.py",
+      "structural_path": "/api/account"
+    },
+    {
+      "access": "authenticated",
+      "dev_only": false,
+      "handler": "app.authn.withdraw_ai_consent",
+      "id": "route:DELETE:/api/auth/ai-consent",
+      "method": "DELETE",
+      "path": "/api/auth/ai-consent",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/ai-consent"
+    },
+    {
+      "access": "owner",
+      "dev_only": false,
+      "handler": "app.routers.account.account_export",
+      "id": "route:GET:/api/account/export",
+      "method": "GET",
+      "path": "/api/account/export",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/account.py",
+      "structural_path": "/api/account/export"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.activity.activity",
+      "id": "route:GET:/api/activity",
+      "method": "GET",
+      "path": "/api/activity",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/activity.py",
+      "structural_path": "/api/activity"
+    },
+    {
+      "access": "authenticated",
+      "dev_only": false,
+      "handler": "app.authn.me",
+      "id": "route:GET:/api/auth/me",
+      "method": "GET",
+      "path": "/api/auth/me",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/me"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.documents.documents",
+      "id": "route:GET:/api/documents",
+      "method": "GET",
+      "path": "/api/documents",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/documents.py",
+      "structural_path": "/api/documents"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.documents.document",
+      "id": "route:GET:/api/documents/{document_id}",
+      "method": "GET",
+      "path": "/api/documents/{document_id}",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/documents.py",
+      "structural_path": "/api/documents/{param}"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.entities.list_entities",
+      "id": "route:GET:/api/entities",
+      "method": "GET",
+      "path": "/api/entities",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.entities.entity_card",
+      "id": "route:GET:/api/entities/{entity_id}",
+      "method": "GET",
+      "path": "/api/entities/{entity_id}",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/{param}"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.files.file",
+      "id": "route:GET:/api/file/{document_id}",
+      "method": "GET",
+      "path": "/api/file/{document_id}",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/files.py",
+      "structural_path": "/api/file/{param}"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.routers.health.health",
+      "id": "route:GET:/api/health",
+      "method": "GET",
+      "path": "/api/health",
+      "public_group": "health",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/health.py",
+      "structural_path": "/api/health"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.jobs.job",
+      "id": "route:GET:/api/jobs/{job_id}",
+      "method": "GET",
+      "path": "/api/jobs/{job_id}",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/jobs.py",
+      "structural_path": "/api/jobs/{param}"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.chat.messages",
+      "id": "route:GET:/api/messages",
+      "method": "GET",
+      "path": "/api/messages",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/chat.py",
+      "structural_path": "/api/messages"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.routers.health.ready",
+      "id": "route:GET:/api/ready",
+      "method": "GET",
+      "path": "/api/ready",
+      "public_group": "health",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/health.py",
+      "structural_path": "/api/ready"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.review.review_items",
+      "id": "route:GET:/api/review-items",
+      "method": "GET",
+      "path": "/api/review-items",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/review.py",
+      "structural_path": "/api/review-items"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.samples.samples",
+      "id": "route:GET:/api/samples",
+      "method": "GET",
+      "path": "/api/samples",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/samples.py",
+      "structural_path": "/api/samples"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.samples.sample_file",
+      "id": "route:GET:/api/samples/file/{name}",
+      "method": "GET",
+      "path": "/api/samples/file/{name}",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/samples.py",
+      "structural_path": "/api/samples/file/{param}"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.search.search",
+      "id": "route:GET:/api/search",
+      "method": "GET",
+      "path": "/api/search",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/search.py",
+      "structural_path": "/api/search"
+    },
+    {
+      "access": "readonly",
+      "dev_only": false,
+      "handler": "app.routers.summary.summary",
+      "id": "route:GET:/api/summary",
+      "method": "GET",
+      "path": "/api/summary",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/summary.py",
+      "structural_path": "/api/summary"
+    },
+    {
+      "access": "authenticated",
+      "dev_only": false,
+      "handler": "app.authn.grant_ai_consent",
+      "id": "route:POST:/api/auth/ai-consent",
+      "method": "POST",
+      "path": "/api/auth/ai-consent",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/ai-consent"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.login",
+      "id": "route:POST:/api/auth/login",
+      "method": "POST",
+      "path": "/api/auth/login",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/login"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.logout",
+      "id": "route:POST:/api/auth/logout",
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/logout"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.password_reset_confirm",
+      "id": "route:POST:/api/auth/password-reset/confirm",
+      "method": "POST",
+      "path": "/api/auth/password-reset/confirm",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/password-reset/confirm"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.password_reset_request",
+      "id": "route:POST:/api/auth/password-reset/request",
+      "method": "POST",
+      "path": "/api/auth/password-reset/request",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/password-reset/request"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.signup",
+      "id": "route:POST:/api/auth/signup",
+      "method": "POST",
+      "path": "/api/auth/signup",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/signup"
+    },
+    {
+      "access": "public",
+      "dev_only": false,
+      "handler": "app.authn.verify_email",
+      "id": "route:POST:/api/auth/verify-email",
+      "method": "POST",
+      "path": "/api/auth/verify-email",
+      "public_group": "auth",
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/verify-email"
+    },
+    {
+      "access": "authenticated",
+      "dev_only": false,
+      "handler": "app.authn.request_verification_email",
+      "id": "route:POST:/api/auth/verify-email/request",
+      "method": "POST",
+      "path": "/api/auth/verify-email/request",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/authn.py",
+      "structural_path": "/api/auth/verify-email/request"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.chat.chat",
+      "id": "route:POST:/api/chat",
+      "method": "POST",
+      "path": "/api/chat",
+      "public_group": null,
+      "requires_ai_consent": true,
+      "requires_verified_email": true,
+      "source": "backend/app/routers/chat.py",
+      "structural_path": "/api/chat"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.create_user_card",
+      "id": "route:POST:/api/entities",
+      "method": "POST",
+      "path": "/api/entities",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.merge_entities",
+      "id": "route:POST:/api/entities/merge",
+      "method": "POST",
+      "path": "/api/entities/merge",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/merge"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.confirm",
+      "id": "route:POST:/api/entities/{entity_id}/confirm",
+      "method": "POST",
+      "path": "/api/entities/{entity_id}/confirm",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/{param}/confirm"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.add_user_fact",
+      "id": "route:POST:/api/entities/{entity_id}/facts",
+      "method": "POST",
+      "path": "/api/entities/{entity_id}/facts",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/{param}/facts"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.unlink_entity",
+      "id": "route:POST:/api/entities/{entity_id}/unlink",
+      "method": "POST",
+      "path": "/api/entities/{entity_id}/unlink",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/{param}/unlink"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.entities.unmerge_entity",
+      "id": "route:POST:/api/entities/{entity_id}/unmerge",
+      "method": "POST",
+      "path": "/api/entities/{entity_id}/unmerge",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/entities.py",
+      "structural_path": "/api/entities/{param}/unmerge"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.facts.verify_fact",
+      "id": "route:POST:/api/facts/{fact_id}/verify",
+      "method": "POST",
+      "path": "/api/facts/{fact_id}/verify",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/facts.py",
+      "structural_path": "/api/facts/{param}/verify"
+    },
+    {
+      "access": "owner",
+      "dev_only": true,
+      "handler": "app.routers.dev.reset",
+      "id": "route:POST:/api/reset",
+      "method": "POST",
+      "path": "/api/reset",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/dev.py",
+      "structural_path": "/api/reset"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.review.resolve_review",
+      "id": "route:POST:/api/review-items/{item_id}/resolve",
+      "method": "POST",
+      "path": "/api/review-items/{item_id}/resolve",
+      "public_group": null,
+      "requires_ai_consent": false,
+      "requires_verified_email": false,
+      "source": "backend/app/routers/review.py",
+      "structural_path": "/api/review-items/{param}/resolve"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.samples.import_sample",
+      "id": "route:POST:/api/samples/import",
+      "method": "POST",
+      "path": "/api/samples/import",
+      "public_group": null,
+      "requires_ai_consent": true,
+      "requires_verified_email": true,
+      "source": "backend/app/routers/samples.py",
+      "structural_path": "/api/samples/import"
+    },
+    {
+      "access": "member",
+      "dev_only": false,
+      "handler": "app.routers.documents.upload",
+      "id": "route:POST:/api/upload",
+      "method": "POST",
+      "path": "/api/upload",
+      "public_group": null,
+      "requires_ai_consent": true,
+      "requires_verified_email": true,
+      "source": "backend/app/routers/documents.py",
+      "structural_path": "/api/upload"
+    }
+  ],
+  "schema_version": 1,
+  "tests": [
+    {
+      "file": "backend/tests/test_account.py",
+      "id": "test:backend/tests/test_account.py",
+      "models": [
+        "model:AuditRun",
+        "model:Document",
+        "model:Entity",
+        "model:Fact",
+        "model:FileObject",
+        "model:Person",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault",
+        "model:VaultMember"
+      ],
+      "routes": [
+        "route:GET:/api/account/export",
+        "route:GET:/api/auth/me",
+        "route:GET:/api/jobs/{job_id}",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/auth/logout",
+        "route:POST:/api/auth/password-reset/request",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/auth/verify-email",
+        "route:POST:/api/chat",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_activity.py",
+      "id": "test:backend/tests/test_activity.py",
+      "models": [
+        "model:AuditEvent",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/activity"
+      ]
+    },
+    {
+      "file": "backend/tests/test_agent_transcript_skill.py",
+      "id": "test:backend/tests/test_agent_transcript_skill.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_ai.py",
+      "id": "test:backend/tests/test_ai.py",
+      "models": [
+        "model:Document",
+        "model:ExtractedFieldEvidence",
+        "model:ExtractionRun",
+        "model:OcrEvidence",
+        "model:Person",
+        "model:ProcessingJob",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:DELETE:/api/auth/ai-consent",
+        "route:GET:/api/auth/me",
+        "route:POST:/api/auth/ai-consent",
+        "route:POST:/api/chat",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_answer.py",
+      "id": "test:backend/tests/test_answer.py",
+      "models": [
+        "model:ChatRun",
+        "model:Document",
+        "model:Entity",
+        "model:Message",
+        "model:ProcessingJob",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/account/export",
+        "route:GET:/api/messages",
+        "route:POST:/api/chat",
+        "route:POST:/api/reset",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_answer_migration.py",
+      "id": "test:backend/tests/test_answer_migration.py",
+      "models": [
+        "model:ChatRun"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_audit.py",
+      "id": "test:backend/tests/test_audit.py",
+      "models": [
+        "model:AuditEvent",
+        "model:AuditRun",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityEvent",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:Fact",
+        "model:FactCandidate",
+        "model:FactProvenance",
+        "model:FactRevision",
+        "model:Person",
+        "model:ProcessingJob",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_auth.py",
+      "id": "test:backend/tests/test_auth.py",
+      "models": [
+        "model:AuthSession",
+        "model:AuthToken",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/auth/me",
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/auth/logout",
+        "route:POST:/api/auth/password-reset/confirm",
+        "route:POST:/api/auth/password-reset/request",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/auth/verify-email",
+        "route:POST:/api/auth/verify-email/request",
+        "route:POST:/api/reset"
+      ]
+    },
+    {
+      "file": "backend/tests/test_authz.py",
+      "id": "test:backend/tests/test_authz.py",
+      "models": [
+        "model:AuditEvent",
+        "model:AuthSession",
+        "model:AuthToken",
+        "model:Document",
+        "model:Fact",
+        "model:FileObject",
+        "model:Person",
+        "model:User",
+        "model:Vault",
+        "model:VaultMember"
+      ],
+      "routes": [
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/auth/logout",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/auth/verify-email",
+        "route:POST:/api/chat",
+        "route:POST:/api/facts/{fact_id}/verify",
+        "route:POST:/api/reset"
+      ]
+    },
+    {
+      "file": "backend/tests/test_cbmap_ci.py",
+      "id": "test:backend/tests/test_cbmap_ci.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_cli.py",
+      "id": "test:backend/tests/test_cbmap_cli.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_curated.py",
+      "id": "test:backend/tests/test_cbmap_curated.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_fingerprints.py",
+      "id": "test:backend/tests/test_cbmap_fingerprints.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_gold.py",
+      "id": "test:backend/tests/test_cbmap_gold.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_hooks.py",
+      "id": "test:backend/tests/test_cbmap_hooks.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_impact.py",
+      "id": "test:backend/tests/test_cbmap_impact.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_inventory.py",
+      "id": "test:backend/tests/test_cbmap_inventory.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_source_mutations.py",
+      "id": "test:backend/tests/test_cbmap_source_mutations.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_cbmap_validation.py",
+      "id": "test:backend/tests/test_cbmap_validation.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_compat_api.py",
+      "id": "test:backend/tests/test_compat_api.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:Fact",
+        "model:FactCandidate",
+        "model:FileObject",
+        "model:Person",
+        "model:ProcessingJob",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/documents",
+        "route:GET:/api/documents/{document_id}",
+        "route:GET:/api/file/{document_id}",
+        "route:GET:/api/jobs/{job_id}",
+        "route:GET:/api/messages",
+        "route:GET:/api/samples",
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/chat",
+        "route:POST:/api/facts/{fact_id}/verify",
+        "route:POST:/api/reset",
+        "route:POST:/api/samples/import",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_contract_shapes.py",
+      "id": "test:backend/tests/test_contract_shapes.py",
+      "models": [
+        "model:Fact",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/auth/me",
+        "route:GET:/api/documents/{document_id}",
+        "route:GET:/api/health",
+        "route:GET:/api/jobs/{job_id}",
+        "route:GET:/api/ready",
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/auth/logout",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_crypto.py",
+      "id": "test:backend/tests/test_crypto.py",
+      "models": [
+        "model:Document",
+        "model:FileObject",
+        "model:User",
+        "model:Vault",
+        "model:VaultKey"
+      ],
+      "routes": [
+        "route:GET:/api/file/{document_id}",
+        "route:GET:/api/jobs/{job_id}",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_entities_api.py",
+      "id": "test:backend/tests/test_entities_api.py",
+      "models": [
+        "model:Document",
+        "model:DocumentAmount",
+        "model:DocumentDate",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityEvent",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:Fact",
+        "model:ReviewItem",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/entities",
+        "route:GET:/api/entities/{entity_id}",
+        "route:GET:/api/review-items",
+        "route:GET:/api/summary"
+      ]
+    },
+    {
+      "file": "backend/tests/test_entities_merge.py",
+      "id": "test:backend/tests/test_entities_merge.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityEvent",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:Fact",
+        "model:Person",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/entities",
+        "route:GET:/api/entities/{entity_id}",
+        "route:POST:/api/entities/merge",
+        "route:POST:/api/entities/{entity_id}/confirm",
+        "route:POST:/api/entities/{entity_id}/facts",
+        "route:POST:/api/entities/{entity_id}/unmerge"
+      ]
+    },
+    {
+      "file": "backend/tests/test_entities_migration.py",
+      "id": "test:backend/tests/test_entities_migration.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_entities_model.py",
+      "id": "test:backend/tests/test_entities_model.py",
+      "models": [
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:Fact",
+        "model:Person",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_filing.py",
+      "id": "test:backend/tests/test_filing.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:ExtractionRun",
+        "model:ProcessingJob",
+        "model:ReviewItem",
+        "model:User"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_lifecycle.py",
+      "id": "test:backend/tests/test_lifecycle.py",
+      "models": [
+        "model:AuditRun",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityEvent",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:FactCandidate",
+        "model:FactProvenance",
+        "model:FactRevision",
+        "model:Person",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/health",
+        "route:GET:/api/ready",
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/reset",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_load_smoke.py",
+      "id": "test:backend/tests/test_load_smoke.py",
+      "models": [
+        "model:User"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_manual_cards.py",
+      "id": "test:backend/tests/test_manual_cards.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:Entity",
+        "model:EntityIdentifier",
+        "model:Fact",
+        "model:FactProvenance",
+        "model:FactRevision",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/activity",
+        "route:GET:/api/entities/{entity_id}",
+        "route:POST:/api/entities",
+        "route:POST:/api/entities/{entity_id}/facts",
+        "route:POST:/api/facts/{fact_id}/verify"
+      ]
+    },
+    {
+      "file": "backend/tests/test_pagination.py",
+      "id": "test:backend/tests/test_pagination.py",
+      "models": [
+        "model:Document",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/documents",
+        "route:POST:/api/auth/signup"
+      ]
+    },
+    {
+      "file": "backend/tests/test_postgres_parity.py",
+      "id": "test:backend/tests/test_postgres_parity.py",
+      "models": [],
+      "routes": [
+        "route:GET:/api/documents",
+        "route:GET:/api/documents/{document_id}",
+        "route:GET:/api/summary"
+      ]
+    },
+    {
+      "file": "backend/tests/test_queue.py",
+      "id": "test:backend/tests/test_queue.py",
+      "models": [
+        "model:AuditEvent",
+        "model:AuditRun",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:EntityMention",
+        "model:ExtractionRun",
+        "model:FileObject",
+        "model:Person",
+        "model:ProcessingJob",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/documents",
+        "route:GET:/api/jobs/{job_id}",
+        "route:GET:/api/samples",
+        "route:GET:/api/summary",
+        "route:POST:/api/samples/import",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_reprocess.py",
+      "id": "test:backend/tests/test_reprocess.py",
+      "models": [
+        "model:Document",
+        "model:DocumentAmount",
+        "model:DocumentDate",
+        "model:DocumentEntity",
+        "model:DocumentTag",
+        "model:DocumentTrustFlag",
+        "model:Entity",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:ExtractionRun",
+        "model:Fact",
+        "model:FactCandidate",
+        "model:OcrEvidence",
+        "model:ProcessingJob",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:DELETE:/api/auth/ai-consent",
+        "route:POST:/api/auth/ai-consent",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_review.py",
+      "id": "test:backend/tests/test_review.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:Entity",
+        "model:EntityConstraint",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:ExtractionRun",
+        "model:Fact",
+        "model:FactCandidate",
+        "model:FactProvenance",
+        "model:FactRevision",
+        "model:Person",
+        "model:ProcessingJob",
+        "model:ReviewItem",
+        "model:User",
+        "model:Vault"
+      ],
+      "routes": [
+        "route:GET:/api/review-items",
+        "route:POST:/api/review-items/{item_id}/resolve"
+      ]
+    },
+    {
+      "file": "backend/tests/test_review_identity.py",
+      "id": "test:backend/tests/test_review_identity.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_route_policy.py",
+      "id": "test:backend/tests/test_route_policy.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_search.py",
+      "id": "test:backend/tests/test_search.py",
+      "models": [
+        "model:Document",
+        "model:ExtractionRun",
+        "model:OcrEvidence",
+        "model:Person",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/search"
+      ]
+    },
+    {
+      "file": "backend/tests/test_security_adversarial.py",
+      "id": "test:backend/tests/test_security_adversarial.py",
+      "models": [
+        "model:Document",
+        "model:Fact",
+        "model:FileObject",
+        "model:User",
+        "model:Vault",
+        "model:VaultMember"
+      ],
+      "routes": [
+        "route:DELETE:/api/auth/ai-consent",
+        "route:GET:/api/auth/me",
+        "route:GET:/api/documents/{document_id}",
+        "route:GET:/api/entities",
+        "route:GET:/api/entities/{entity_id}",
+        "route:GET:/api/file/{document_id}",
+        "route:GET:/api/jobs/{job_id}",
+        "route:GET:/api/search",
+        "route:GET:/api/summary",
+        "route:POST:/api/auth/ai-consent",
+        "route:POST:/api/auth/login",
+        "route:POST:/api/auth/logout",
+        "route:POST:/api/auth/password-reset/confirm",
+        "route:POST:/api/auth/password-reset/request",
+        "route:POST:/api/auth/signup",
+        "route:POST:/api/auth/verify-email",
+        "route:POST:/api/chat",
+        "route:POST:/api/entities/merge",
+        "route:POST:/api/entities/{entity_id}/confirm",
+        "route:POST:/api/entities/{entity_id}/unlink",
+        "route:POST:/api/entities/{entity_id}/unmerge",
+        "route:POST:/api/facts/{fact_id}/verify",
+        "route:POST:/api/reset",
+        "route:POST:/api/samples/import",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_serialization_perf.py",
+      "id": "test:backend/tests/test_serialization_perf.py",
+      "models": [
+        "model:Document",
+        "model:Fact",
+        "model:User"
+      ],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_settings.py",
+      "id": "test:backend/tests/test_settings.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_smoke_flows.py",
+      "id": "test:backend/tests/test_smoke_flows.py",
+      "models": [
+        "model:Fact",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/documents",
+        "route:GET:/api/health",
+        "route:GET:/api/jobs/{job_id}",
+        "route:GET:/api/messages",
+        "route:GET:/api/summary",
+        "route:POST:/api/chat",
+        "route:POST:/api/facts/{fact_id}/verify",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "backend/tests/test_state.py",
+      "id": "test:backend/tests/test_state.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_status_quo.py",
+      "id": "test:backend/tests/test_status_quo.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_storage.py",
+      "id": "test:backend/tests/test_storage.py",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "backend/tests/test_unlink.py",
+      "id": "test:backend/tests/test_unlink.py",
+      "models": [
+        "model:AuditEvent",
+        "model:Document",
+        "model:DocumentEntity",
+        "model:EntityEvent",
+        "model:EntityIdentifier",
+        "model:EntityMention",
+        "model:ExtractionRun",
+        "model:ReviewItem",
+        "model:User"
+      ],
+      "routes": [
+        "route:GET:/api/entities",
+        "route:GET:/api/entities/{entity_id}",
+        "route:POST:/api/entities/{entity_id}/unlink"
+      ]
+    },
+    {
+      "file": "backend/tests/test_uploads.py",
+      "id": "test:backend/tests/test_uploads.py",
+      "models": [
+        "model:Document",
+        "model:FileObject"
+      ],
+      "routes": [
+        "route:GET:/api/file/{document_id}",
+        "route:GET:/api/samples/file/{name}",
+        "route:POST:/api/samples/import",
+        "route:POST:/api/upload"
+      ]
+    },
+    {
+      "file": "client/src/api-auth.test.mjs",
+      "id": "test:client/src/api-auth.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/api-documents.test.mjs",
+      "id": "test:client/src/api-documents.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/api-job.test.mjs",
+      "id": "test:client/src/api-job.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/assistant-consent.test.mjs",
+      "id": "test:client/src/assistant-consent.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/capture-consent.test.mjs",
+      "id": "test:client/src/capture-consent.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/capture-context.test.mjs",
+      "id": "test:client/src/capture-context.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/capture-polling.test.mjs",
+      "id": "test:client/src/capture-polling.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/cbmap-inventory.test.mjs",
+      "id": "test:client/src/cbmap-inventory.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/chat-progress.test.mjs",
+      "id": "test:client/src/chat-progress.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/document-drawer.test.mjs",
+      "id": "test:client/src/document-drawer.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/email-verification-banner.test.mjs",
+      "id": "test:client/src/email-verification-banner.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/entities.test.mjs",
+      "id": "test:client/src/entities.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/entity-create.test.mjs",
+      "id": "test:client/src/entity-create.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/history-feed.test.mjs",
+      "id": "test:client/src/history-feed.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/review-inbox.test.mjs",
+      "id": "test:client/src/review-inbox.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/status-quo-mermaid.test.mjs",
+      "id": "test:client/src/status-quo-mermaid.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/token-link.test.mjs",
+      "id": "test:client/src/token-link.test.mjs",
+      "models": [],
+      "routes": []
+    },
+    {
+      "file": "client/src/view-regressions.test.mjs",
+      "id": "test:client/src/view-regressions.test.mjs",
+      "models": [],
+      "routes": []
+    }
+  ],
+  "unknowns": [
+    {
+      "confidence": "unknown",
+      "file": "backend/tests/test_contract_shapes.py",
+      "id": "unknown:a90bc6bb56ab3b82",
+      "method": "GET",
+      "path": "/api/auth/login",
+      "reason": "unmatched_test_route"
+    },
+    {
+      "confidence": "unknown",
+      "file": "backend/tests/test_contract_shapes.py",
+      "id": "unknown:e470ad1bdabee4f7",
+      "method": "GET",
+      "path": "/api/does-not-exist",
+      "reason": "unmatched_test_route"
+    }
+  ]
+}

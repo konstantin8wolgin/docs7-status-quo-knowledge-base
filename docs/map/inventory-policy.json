@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "exceptions": [
+    {
+      "subject": "route:DELETE:/api/account",
+      "classification": "intentionally_no_client",
+      "rationale": "Account deletion is an implemented backend capability not yet exposed in the product client."
+    },
+    {
+      "subject": "route:DELETE:/api/account",
+      "classification": "intentionally_no_test",
+      "rationale": "The destructive account-deletion route is covered indirectly by account-domain tests pending a dedicated HTTP case."
+    },
+    {
+      "subject": "route:DELETE:/api/auth/ai-consent",
+      "classification": "intentionally_no_client",
+      "rationale": "The client currently grants but does not expose revocation of AI consent."
+    },
+    {
+      "subject": "route:GET:/api/account/export",
+      "classification": "intentionally_no_client",
+      "rationale": "Account export is an implemented backend capability not yet exposed in the product client."
+    },
+    {
+      "subject": "route:GET:/api/entities",
+      "classification": "intentionally_no_client",
+      "rationale": "Entity administration is not yet exposed through the current product client API."
+    },
+    {
+      "subject": "route:GET:/api/file/{document_id}",
+      "classification": "dynamic_consumer",
+      "rationale": "Document files are opened as browser URLs rather than through a named api.js method."
+    },
+    {
+      "subject": "route:GET:/api/health",
+      "classification": "intentionally_no_client",
+      "rationale": "Health probes are consumed by operations, not by the browser product client."
+    },
+    {
+      "subject": "route:GET:/api/ready",
+      "classification": "intentionally_no_client",
+      "rationale": "Readiness probes are consumed by operations, not by the browser product client."
+    },
+    {
+      "subject": "route:GET:/api/samples/file/{name}",
+      "classification": "dynamic_consumer",
+      "rationale": "Sample previews are addressed as browser URLs rather than through a named api.js method."
+    },
+    {
+      "subject": "route:GET:/api/search",
+      "classification": "intentionally_no_client",
+      "rationale": "Backend search is not yet wired into the current product client API."
+    },
+    {
+      "subject": "route:POST:/api/entities/merge",
+      "classification": "intentionally_no_client",
+      "rationale": "Entity merge administration is not yet exposed through the current product client API."
+    },
+    {
+      "subject": "route:POST:/api/entities/{entity_id}/unmerge",
+      "classification": "intentionally_no_client",
+      "rationale": "Entity unmerge administration is not yet exposed through the current product client API."
+    },
+    {
+      "subject": "unknown:a90bc6bb56ab3b82",
+      "classification": "intentional_negative_test",
+      "rationale": "The contract test deliberately sends GET to the POST-only login path."
+    },
+    {
+      "subject": "unknown:e470ad1bdabee4f7",
+      "classification": "intentional_negative_test",
+      "rationale": "The contract test deliberately probes a nonexistent API route."
+    }
+  ]
+}
